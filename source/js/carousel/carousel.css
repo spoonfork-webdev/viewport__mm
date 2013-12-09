@@ -1,0 +1,55 @@
+.content-leader {
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.js .content-leader {
+  overflow: hidden;
+}
+
+.carousel-slides {
+  width: 2400%;
+  max-width: 2400%;
+  margin: 0;
+  padding: 0;
+}
+
+.js .carousel-slides {
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.carousel-slides li {
+  float: left;
+}
+
+.js .carousel-slides li {
+  float: none;
+  background-color: #fff;
+  position: absolute;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  left: 0;
+  top: 0;
+}
+
+.js .carousel-slides {
+  display: block;
+  visibility: visible;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.js .carousel-slides:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}

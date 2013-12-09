@@ -1,0 +1,148 @@
+//==========================================================================
+//  Core Styles
+//==========================================================================
+
+// Reset
+//--------------------------------------------------------------------------
+// http://meyerweb.com/eric/tools/css/reset/ 
+// v2.0 | 20110126
+// License: none (public domain)
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+// HTML5 display-role reset for older browsers
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+// http://www.paulirish.com/2012/box-sizing-border-box-ftw
+// *, *:before, *:after {
+//   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+//  }
+
+// http://susy.oddbird.net/guides/reference/#ref-border-box-mixin
+@include border-box-sizing;
+
+html { 
+  overflow-y: scroll;
+  background: #fff;
+}
+// /ht Ethan Marcotte - http://front.ie/l8rJaA
+img, embed, object, video { max-width: 100%; }
+.ie6 img.full, .ie6 object.full, .ie6 embed, .ie6 video { width: 100%; }
+
+// Type
+//--------------------------------------------------------------------------
+// https://github.com/designbyfront/The-Goldilocks-Approach/blob/master/css/global.css
+body {
+  font-family: $base-font-family;
+  font-size: 100%;
+  line-height: $base-line-height / $base-font-size;
+}
+h1 {
+  @include adjust-font-size-to(38px);
+}
+h2 {
+  @include adjust-font-size-to(32px);
+}
+h3, h1 small {
+  @include adjust-font-size-to(24px);
+}
+h4, h2 small {
+  @include adjust-font-size-to(18px);
+}
+h5, h3 small, h4 small {
+  @include adjust-font-size-to(16px);
+}
+h6 {
+  @include adjust-font-size-to(12px);
+}
+
+p, ul, ol, dl, blockquote {
+  @include adjust-font-size-to($base-font-size);
+  max-width: 30em; //Optimal width for long-form text
+  @include margin-trailer;
+}
+    
+ul { list-style-type: disc; margin-left: emCalc($base-line-height); }
+ol { list-style-type: decimal; margin-left: emCalc($base-line-height); }
+nav ul, nav ol { list-style: none; margin: 0; padding: 0;}
+
+b, strong { font-weight: bold; }
+i, em { font-style: italic; }
+small { font-size: 80%; }
+
+a {
+  text-decoration: none;
+}
+
+// Helpers
+//--------------------------------------------------------------------------
+%hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+%invisible {
+    visibility: hidden;
+}
+
+%visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+%clear-fix {
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+%display-block {
+  display: block;
+  *zoom: 1;
+}
+
+%overflow-hidden {
+  overflow: hidden;
+}

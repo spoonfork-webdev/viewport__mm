@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <!-- Use title if it's in the page YAML frontmatter -->
+        <title><%= current_page.data.title || "Spoonfork HTML5 Boilerplate" %></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,900italic|Roboto:700">
+        <link rel="stylesheet" href="js/carousel/carousel.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+
+        <header class="site-header">
+            <div class="container">
+                <h1 class="logo">Viewport <span class="tagline">| A Middleman Template</span></h1>
+            </div>
+        </header>
+
+        <nav class="site-menu container">
+            <ul>
+                <li><a href="#">World News</a><span>From Around The Globe</span></li>
+                <li><a href="#">Celebrity News</a><span>Juicy Hollywood Gossip</span></li>
+                <li><a href="#">Travel News</a><span>Travel News, Guides &amp; Tips</span></li>
+                <li><a href="#">Technology</a><span>Apps, Internet &amp; Gadgets</span></li>
+                <li><a href="#">Lifestyle Tips</a><span>Your Health &amp; Happiness</span></li>
+                <li><a href="#">Entertainment</a><span>Movies, Music &amp; Reviews</span></li>
+            </ul>
+        </nav>
+
+        <div class="site-body container" role="main">
+            <div class="content-leader">
+                <ul class="carousel-slides">
+                    <li>
+                        <article>
+                            <div class="text-box">
+                                <h3><a href="#">Chavez Undergoes Medical Treatment In Cuba</a></h3>
+                                <p class="article-info">
+                                    <span>August 4th 2012</span>
+                                    <span><a href="#">3 Comments</a></span>
+                                </p>
+                            </div>
+                            <div class="img-box"><img src="img/hugo_chavez.jpg" alt="Hugo Chavez"></div>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <div class="text-box">
+                                <h3><a href="#">Obama Secretly Pledges to Divide Jerusalem</a></h3>
+                                <p class="article-info">
+                                    <span>August 4th 2012</span>
+                                    <span><a href="#">3 Comments</a></span>
+                                </p>
+                            </div>
+                            <div class="img-box"><img src="img/obama_speaks.jpg" alt="President Obama Speaking"></div>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <div class="text-box">
+                                <h3><a href="#">Afghanistan's Security Prospects After  NATO Withdrawal</a></h3>
+                                <p class="article-info">
+                                    <span>August 4th 2012</span>
+                                    <span><a href="#">3 Comments</a></span>
+                                </p>
+                            </div>
+                            <div class="img-box"><img src="img/troops_afghanistan.jpg" alt="NATO troops in Afghanistan"></div>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <div class="text-box">
+                                <h3><a href="#">13 Essential Phone and iPad Apps To Help You Stay Sane During Your Move</a></h3>
+                                <p class="article-info">
+                                    <span>August 4th 2012</span>
+                                    <span><a href="#">3 Comments</a></span>
+                                </p>
+                            </div>
+                            <div class="img-box"><img src="img/family_moving.jpg" alt="Family packing boxes"></div>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <div class="text-box">
+                                <h3><a href="#">3D Printing Is Here! And So Are The Copyright Police</a></h3>
+                                <p class="article-info">
+                                    <span>August 4th 2012</span>
+                                    <span><a href="#">3 Comments</a></span>
+                                </p>
+                            </div>
+                            <div class="img-box"><img src="img/3d_printing.jpg" alt="3d Printer"></div>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <div class="text-box">
+                                <h3><a href="#">4 Insanely Simple Steps To Email Inbox Sanity</a></h3>
+                                <p class="article-info">
+                                    <span>August 4th 2012</span>
+                                    <span><a href="#">3 Comments</a></span>
+                                </p>
+                            </div>
+                            <div class="img-box"><img src="img/insanity.jpg" alt="Crazy Person"></div>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <div class="text-box">
+                                <h3><a href="#">Seat Belts: How They Save Lives</a></h3>
+                                <p class="article-info">
+                                    <span>August 4th 2012</span>
+                                    <span><a href="#">3 Comments</a></span>
+                                </p>
+                            </div>
+                            <div class="img-box"><img src="img/seatbelt.jpg" alt="Seatbelt"></div>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <div class="text-box">
+                                <h3><a href="#">How To Eat A Healthy Diet</a></h3>
+                                <p class="article-info">
+                                    <span>August 4th 2012</span>
+                                    <span><a href="#">3 Comments</a></span>
+                                </p>
+                            </div>
+                            <div class="img-box"><img src="img/salad.jpg" alt="Salad"></div>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebar-1">
+                <form id="search-form" action="">
+                    <p>
+                        <label for="search">Search</label>
+                        <input id="search" name="search" type="text" value="to search, type and hit enter">
+                    </p>
+                </form>
+            </div>
+            <div class="main-1">
+                <div class="category">
+                    <h2>Technology</h2>
+                    <ul>
+                        <li>
+                            <article>
+                                <img src="img/family_moving.jpg" alt="Family packing boxes">
+                                <h3><a href="#">13 Essential Phone and iPad Apps To Help You Stay Sane During Your Move</a></h3>
+                                <p class="article-info">
+                                    <span>August 4th 2012</span>
+                                    <span><a href="#">3 Comments</a></span>
+                                </p>
+                                <p class="article-text">
+                                    Moving is a tough and stressful process. You need to coordinate your things, throw items away...
+                                </p>
+                            </article>
+                        </li>
+                        <li>
+                            <article>
+                                <img src="img/3d_printing.jpg" alt="3d Printer">
+                                <h3><a href="#">3D Printing Is Here! And So Are The Copyright Police</a></h3>
+                                <p class="article-info">
+                                    <span>August 4th 2012</span>
+                                    <span><a href="#">3 Comments</a></span>
+                                </p>
+                            </article>
+                        </li>
+                        <li>
+                            <article>
+                                <img src="img/insanity.jpg" alt="Crazy Person">
+                                <h3><a href="#">4 Insanely Simple Steps To Email Inbox Sanity</a></h3>
+                                <p class="article-info">
+                                    <span>August 4th 2012</span>
+                                    <span><a href="#">3 Comments</a></span>
+                                </p>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
+                <div class="category">
+                    <h2>World News</h2>
+                    <ul>
+                        <li>
+                            <article>
+                                <img src="img/family_moving.jpg" alt="Family packing boxes">
+                                <h3><a href="#">Afghanistan's Security Prospects After  NATO Withdrawal</a></h3>
+                                <p class="article-info">
+                                    <span>August 4th 2012</span>
+                                    <span><a href="#">3 Comments</a></span>
+                                </p>
+                                <p class="article-text">
+                                    Nato-led forces have been in Afghanistan for so long now that it is almost hard to remember why...
+                                </p>
+                            </article>
+                        </li>
+                        <li>
+                            <article>
+                                <img src="img/3d_printing.jpg" alt="3d Printer">
+                                <h3><a href="#">3D Printing Is Here! And So Are The Copyright Police</a></h3>
+                                <p class="article-info">
+                                    <span>August 4th 2012</span>
+                                    <span><a href="#">3 Comments</a></span>
+                                </p>
+                            </article>
+                        </li>
+                        <li>
+                            <article>
+                                <img src="img/insanity.jpg" alt="Crazy Person">
+                                <h3><a href="#">4 Insanely Simple Steps To Email Inbox Sanity</a></h3>
+                                <p class="article-info">
+                                    <span>August 4th 2012</span>
+                                    <span><a href="#">3 Comments</a></span>
+                                </p>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
+                <div class="category">
+                    <h2>Entertainment</h2>
+                    <ul>
+                        <li>
+                            <article>
+                                <img src="img/family_moving.jpg" alt="Family packing boxes">
+                                <h3><a href="#">13 Essential Phone and iPad Apps To Help You Stay Sane During Your Move</a></h3>
+                                <p class="article-info">
+                                    <span>August 4th 2012</span>
+                                    <span><a href="#">3 Comments</a></span>
+                                </p>
+                                <p class="article-text">
+                                    Moving is a tough and stressful process. You need to coordinate your things, throw items away...
+                                </p>
+                            </article>
+                        </li>
+                        <li>
+                            <article>
+                                <img src="img/3d_printing.jpg" alt="3d Printer">
+                                <h3><a href="#">3D Printing Is Here! And So Are The Copyright Police</a></h3>
+                                <p class="article-info">
+                                    <span>August 4th 2012</span>
+                                    <span><a href="#">3 Comments</a></span>
+                                </p>
+                            </article>
+                        </li>
+                        <li>
+                            <article>
+                                <img src="img/insanity.jpg" alt="Crazy Person">
+                                <h3><a href="#">4 Insanely Simple Steps To Email Inbox Sanity</a></h3>
+                                <p class="article-info">
+                                    <span>August 4th 2012</span>
+                                    <span><a href="#">3 Comments</a></span>
+                                </p>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
+                <div class="category">
+                    <h2>Lifestyle Tips</h2>
+                    <ul>
+                        <li>
+                            <article>
+                                <img src="img/family_moving.jpg" alt="Family packing boxes">
+                                <h3><a href="#">Afghanistan's Security Prospects After  NATO Withdrawal</a></h3>
+                                <p class="article-info">
+                                    <span>August 4th 2012</span>
+                                    <span><a href="#">3 Comments</a></span>
+                                </p>
+                                <p class="article-text">
+                                    Nato-led forces have been in Afghanistan for so long now that it is almost hard to remember why...
+                                </p>
+                            </article>
+                        </li>
+                        <li>
+                            <article>
+                                <img src="img/3d_printing.jpg" alt="3d Printer">
+                                <h3><a href="#">3D Printing Is Here! And So Are The Copyright Police</a></h3>
+                                <p class="article-info">
+                                    <span>August 4th 2012</span>
+                                    <span><a href="#">3 Comments</a></span>
+                                </p>
+                            </article>
+                        </li>
+                        <li>
+                            <article>
+                                <img src="img/insanity.jpg" alt="Crazy Person">
+                                <h3><a href="#">4 Insanely Simple Steps To Email Inbox Sanity</a></h3>
+                                <p class="article-info">
+                                    <span>August 4th 2012</span>
+                                    <span><a href="#">3 Comments</a></span>
+                                </p>
+                            </article>
+                        </li>
+                    </ul>
+                </div>            </div>
+            <div class="sidebar-2">
+                <h2>Twitter</h2>
+                <ul class="twitter">
+                    <li>
+                        <article>
+                            <p>
+                                Genesis Child Themes at Theme Garden – December 5th --&gt; <a href="#">http://bit.ly/ibXdjY</a> <a href="#">#genesiswp</a> <a href="#">#themegarden</a> <span class="time-stamp">31 minutes ago</span>
+                            </p>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <p>
+                                The Rockstar Guide to Getting More Traffic, Fame, and Success --&gt; <a href="#">http://bit.ly/hCzF69</a> <span class="time-stamp">31 minutes ago</span>
+                            </p>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <p>
+                                Genesis Child Themes at Theme Garden – December 5th --&gt; <a href="#">http://bit.ly/ibXdjY</a> <a href="#">#genesiswp</a> <a href="#">#themegarden</a> <span class="time-stamp">31 minutes ago</span>
+                            </p>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <p>
+                                The Rockstar Guide to Getting More Traffic, Fame, and Success --&gt; <a href="#">http://bit.ly/hCzF69</a> <span class="time-stamp">31 minutes ago</span>
+                            </p>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+            <div class="main-2">
+                <h2>Latest Articles</h2>
+                <ul class="latest-articles">
+                    <li>
+                        <article>
+                            <img src="img/family_moving.jpg" alt="Family packing boxes">
+                            <h3><a href="#">13 Essential Phone and iPad Apps To Help You Stay Sane During Your Move</a></h3>
+                            <p class="article-info">
+                                <span>August 4th 2012</span>
+                                <span><a href="#">3 Comments</a></span>
+                            </p>
+                            <p class="article-text">
+                                Moving is a tough and stressful process. You need to coordinate your things, throw items away...
+                            </p>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <img src="img/family_moving.jpg" alt="Family packing boxes">
+                            <h3><a href="#">Afghanistan's Security Prospects After  NATO Withdrawal</a></h3>
+                            <p class="article-info">
+                                <span>August 4th 2012</span>
+                                <span><a href="#">3 Comments</a></span>
+                            </p>
+                            <p class="article-text">
+                                Nato-led forces have been in Afghanistan for so long now that it is almost hard to remember why...
+                            </p>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <img src="img/salad.jpg" alt="Salad">
+                            <h3><a href="#">How To Eat A Healthy Diet</a></h3>
+                            <p class="article-info">
+                                <span>August 4th 2012</span>
+                                <span><a href="#">3 Comments</a></span>
+                            </p>
+                            <p class="article-text">
+                                In order to keep yourself in the best shape possible, it's essential to eat a healthy diet...
+                            </p>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebar-3">
+                <h2>Recent Posts</h2>
+                <ul class="recent-posts">
+                    <li><a href="#">Use Prose to Put the Focus on Your Words</a></li>
+                    <li><a href="#">Images Add Life to Your Site</a></li>
+                    <li><a href="#">What's a Framework and Why do I Need One</a></li>
+                    <li><a href="#">7 Tips for Capturing Short Attention Spans</a></li>
+                    <li><a href="#">Making Your Blog a Great Place to Hang Out</a></li>
+                </ul>
+            </div>
+            <div class="content-footer">
+                <div class="back-to-top">
+                    <p><a href="#">Back to Top &#94;</a></p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div>
+                    <h2>Recent Posts</h2>
+                    <ul class="recent-posts">
+                        <li><a href="#">Use Prose to Put the Focus on Your Words</a></li>
+                        <li><a href="#">Images Add Life to Your Site</a></li>
+                        <li><a href="#">What's a Framework and Why do I Need One</a></li>
+                        <li><a href="#">7 Tips for Capturing Short Attention Spans</a></li>
+                        <li><a href="#">Making Your Blog a Great Place to Hang Out</a></li>
+                    </ul>
+                </div>
+                <div class="about">
+                    <h2>About Viewport</h2>
+                    <p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. </p>
+                    <p>Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum.</p>
+                </div>
+                <div>
+                    <h2>Comments</h2>
+                    <ul class="comments">
+                        <li>Orman Clark on <a href="">How To Eat A Healthy Diet</a></li>
+                        <li>Lisa Donahue on <a href="">Seat Belts: How They Save Lives</a></li>
+                        <li>Patrick Timmons on <a href="">Afghanistan's Security Prospects After  NATO Withdrawal</a></li>
+                        <li>Orman Clark on <a href="">How To Eat A Healthy Diet</a></li>
+                        <li>Lisa Donahue on <a href="">Seat Belts: How They Save Lives</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/carousel/carousel.js"></script>
+        <script src="js/plugins.js"></script>
+
+    </body>
+</html>

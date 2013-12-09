@@ -1,0 +1,271 @@
+//==========================================================================
+//  Imports
+//==========================================================================
+@import "compass";
+@import "susy";
+
+@import "_partials/base";
+@import "_partials/core-styles";
+@import "_partials/layout";
+@import "_partials/theme";
+@import "_partials/grid";
+
+.site-header {
+  @extend %header;
+  @extend %bg--noise--light;
+}
+
+.logo {
+  @extend %header__logo;
+  @extend %font--logo;
+}
+.tagline {
+  @extend %header__logo__tagline;
+  @extend %font--georgia-italic;
+  @extend %color--dark-gray;
+  font-weight: normal;
+  -webkit-text-stroke: initial;
+}
+
+.site-menu {
+  @extend %nav;
+  @extend %box-shadow--upper;
+  ul {
+    @extend %nav__menu;
+    @extend %border-radius--top;
+  }
+  li {
+    @extend %nav__menu__item;
+  }
+  a {
+    @extend %nav__menu__item__link;
+    @extend %font--roboto-bold;
+    @extend %color--white;
+    @extend %bg--noise;
+    &:hover {
+      @extend %bg--noise--dark;
+    }
+  }
+  span {
+    @extend %nav__menu__item__tagline;
+    @extend %font--georgia-italic;
+    @extend %color--dark-gray;    
+  }
+}
+
+.site-body {
+  @extend %body;
+  @extend %box-shadow--lower;
+  @extend %bg--white;
+}
+
+.content-leader {
+  @extend %body__leader;
+  @extend %bg--stripes;
+}
+
+.carousel-slides {
+  li {
+    @extend %carousel__slide;
+    background-color: $light-gray !important;
+  }
+  .text-box {
+    @extend %carousel__slide__text-box;
+    @extend %bg--darker-gray;
+    opacity: 0.8;
+  }
+  h3 {
+    @extend %carousel__slide__text-box__heading;
+    @extend %font--roboto-bold;
+    a {
+      @extend %color--white;
+      @extend %hover--to-lighter-gray;
+    }
+  }
+  .article-info {
+    @extend %carousel__slide__text-box__info;
+    @extend %font--georgia-italic;
+    @extend %color--gray;
+    a {
+      @extend %color--lighter-gray;
+      @extend %hover--to-white;
+    }
+  }
+  .img-box {
+    @extend %carousel__slide__img-box;
+  }
+}
+
+.main-1,
+.sidebar-2,
+.main-2,
+.sidebar-3,
+.site-footer {
+  h2 {
+    @extend %list-heading;
+    @extend %font--georgia-italic;
+    @extend %color--darker-gray;
+  }
+}
+
+.sidebar-1 {
+  @extend %body__sidebar-1;
+}
+
+#search-form {
+  label {
+    @extend %visually-hidden;
+  }
+  p {
+    @extend %search-bar__wrapper;
+  }
+}
+#search {
+  @extend %color--gray;
+  @extend %search-bar;
+}
+
+.category {
+  ul {
+    @extend %category-list;
+  }
+  li {
+    @extend %category-list__item;
+    @extend %border-bottom--light-gray;
+  }
+  img {
+    @extend %category-list__item__img;
+  }
+  h3 {
+    @extend %category-list__item__heading;
+    a {
+      @extend %color--darker-gray;
+      @extend %hover--to-orange;
+    }
+  }
+  .article-info {
+    @extend %category-list__item__info;
+    @extend %font--georgia-italic;
+    @extend %color--light-gray;
+    a {
+      @extend %color--light-gray;
+      @extend %hover--to-darker-gray;
+    }
+  }
+  .article-text {
+    @extend %category-list__item__text;
+    @extend %color--dark-gray;
+  }
+}
+
+.twitter {
+  @extend %twitter-list;
+  li {
+    @extend %twitter-list__item;
+  }
+  p {
+    @extend %twitter-list__item__body;
+    @extend %color--dark-gray;
+  }
+  a {
+    @extend %color--orange;
+    @extend %hover--to-underline;
+  }
+  .time-stamp {
+    @extend %twitter-list__item__body__timestamp;
+    font-style: italic;
+    @extend %color--light-gray;
+  }
+}
+
+.latest-articles {
+  @extend %latest-list;
+  li {
+    @extend %latest-list__item;
+    @extend %border-bottom--light-gray;
+  }
+  img {
+    @extend %latest-list__item__img;
+  }
+  h3 {
+    @extend %latest-list__item__heading;
+    a {
+      @extend %color--darker-gray;
+      @extend %hover--to-orange;
+    }
+  }
+  .article-info {
+    @extend %latest-list__item__info;
+    @extend %font--georgia-italic;
+    @extend %color--light-gray;
+    a {
+      @extend %color--light-gray;
+      @extend %hover--to-darker-gray;
+    }
+  }
+  .article-text {
+    @extend %latest-list__item__text;
+    @extend %color--dark-gray;
+  }
+}
+
+.recent-posts {
+  @extend %recent-list;
+  li {
+    @extend %recent-list__item;
+  }
+  a {
+    @extend %recent-list__item__link;
+    @extend %color--darker-gray;
+    @extend %hover--to-orange;
+  }
+}
+
+.back-to-top {
+  @extend %back-to-top;
+  @extend %font--georgia-italic;
+  @extend %bg--stripes;
+  a {
+    @extend %color--dark-gray;
+    @extend %hover--to-gray
+  }
+}
+
+.site-footer {
+  @extend %footer;
+  @extend %bg--noise--light;
+  h2 {
+    @extend %font--georgia-italic;
+    color: $lighter-gray;
+  }
+  p {
+    @extend %color--light-gray;
+  }
+  .recent-posts {
+    a {
+      @extend %color--lighter-gray;
+      @extend %hover--to-white;      
+    }
+  }
+  a {
+    @extend %color--lighter-gray;
+    @extend %hover--to-white;    
+  }
+}
+.about {
+  @extend %about;
+}
+.comments {
+  @extend %comment-list;
+  li {
+    @extend %comment-list__item;
+    @extend %comment-list__item__author;
+    @extend %color--light-gray;
+  }
+  a {
+    @extend %comment-list__item__link;
+  }
+}
+
+@import "_partials/grid";
+

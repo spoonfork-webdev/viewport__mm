@@ -1,0 +1,223 @@
+//==========================================================================
+//  Theme
+//==========================================================================
+// // Colors
+// $lighter-gray: #dddddd;
+// $light-gray: #aaaaaa;
+// $gray: #999999;
+// $dark-gray: #787878;
+// $darker-gray: #444444;
+
+// $orange: #e47600;
+
+// Colors
+//--------------------------------------------------------------------------
+%color--white {
+  color: #fff;
+}
+
+%color--lighter-gray {
+  color: $lighter-gray;
+}
+
+%color--light-gray {
+  color: $light-gray;
+}
+
+%color--gray {
+  color: $gray;
+}
+
+%color--dark-gray {
+  color: $dark-gray;
+}
+
+%color--darker-gray {
+  color: $darker-gray;
+}
+
+%color--orange {
+  color: $orange;
+}
+
+// Background Styles
+//--------------------------------------------------------------------------
+// body {
+//   background-image: url(../img/body_bg.png);
+//   background-repeat: repeat-x;
+// }
+
+%bg--white {
+  background-color: #fff;
+}
+
+%bg--lighter-gray {
+  background-color: $lighter-gray;
+}
+
+%bg--light-gray {
+  background-color: $light-gray;
+}
+
+%bg--gray {
+  background-color: $gray;
+}
+
+%bg--dark-gray {
+  background-color: $dark-gray;
+}
+
+%bg--darker-gray {
+  background-color: $darker-gray;
+}
+
+%bg--orange {
+  background-color: $orange;
+}
+
+%bg--noise {
+  background-image: url(../img/blackmamba_light.png);
+  background-repeat: repeat;
+}
+
+%bg--noise--dark {
+  background-image: url(../img/blackmamba.png);
+  background-repeat: repeat;
+}
+
+%bg--noise--light {
+  background-image: url(../img/blackmamba_lighter.png);
+  background-repeat: repeat;
+}
+
+%bg--stripes {
+  background-image: url(../img/content_bg.png);
+  background-repeat: repeat;
+}
+
+// Borders
+//--------------------------------------------------------------------------
+%border--lighter-gray {
+  border: 1px solid $lighter-gray;
+}
+
+%border--light-gray {
+  border: 1px solid $light-gray;
+}
+
+%border-bottom--light-gray {
+  border-bottom: 1px solid $light-gray;
+}
+
+%border--gray {
+  border: 1px solid $gray;
+}
+
+%border--dark-gray {
+  border: 1px solid $dark-gray;
+}
+
+%border--darker-gray {
+  border: 1px solid $darker-gray;
+}
+// Fonts
+//--------------------------------------------------------------------------
+%font--logo {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke: 0.5px;
+  -webkit-text-stroke-color: #aaaaaa;
+}
+
+%font--georgia-italic {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+}
+
+%font--roboto-bold {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+// Hover States
+//--------------------------------------------------------------------------
+%hover--to-white {
+  &:hover {
+    @extend %color--white;
+  }
+}
+
+%hover--to-lighter-gray {
+  &:hover {
+    @extend %color--lighter-gray
+  }
+}
+
+%hover--to-gray {
+  &:hover {
+    @extend %color--gray;
+  }
+}
+
+%hover--to-darker-gray {
+  &:hover {
+    @extend %color--darker-gray
+  }
+}
+
+%hover--to-orange {
+  &:hover {
+    @extend %color--orange;
+  }
+}
+
+%hover--to-underline {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// CSS3 & Browser Specific
+//--------------------------------------------------------------------------
+%border-radius {
+  @include border-radius;
+}
+
+%border-radius--top {
+  @include border-top-radius;
+}
+
+%border-radius--right {
+  @include border-right-radius;
+}
+
+%border-radius--bottom {
+  @include border-bottom-radius;
+}
+
+%border-radius--left {
+  @include border-left-radius;
+}
+
+%border-radius--top-left {
+  @include border-top-left-radius;
+}
+
+%border-radius--top-right {
+  @include border-top-right-radius;
+}
+
+%box-shadow--upper {
+  -webkit-box-shadow: 0px -2px 6px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px -2px 6px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px -2px 6px rgba(50, 50, 50, 0.75);
+}
+
+%box-shadow--lower {
+  -webkit-box-shadow: 0px 2px 6px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 2px 6px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 2px 6px rgba(50, 50, 50, 0.75);
+}

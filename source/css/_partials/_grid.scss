@@ -1,0 +1,65 @@
+//==========================================================================
+//  Grid
+//==========================================================================
+
+// Mobile
+//--------------------------------------------------------------------------
+@include at-breakpoint($total-columns $medium-breakpoint)
+{
+  .container {
+    max-width: 29.4375em;   //471px
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .site-header {
+    padding: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .site-menu {
+    max-width: 29.4375em;   //471px
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .sidebar-1,
+  .main-1,
+  .sidebar-2,
+  .main-2,
+  .sidebar-3, {
+    max-width: 29.4375em;   //471px
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0.75em;   //12px
+    padding-left: 0.75em;   //12px 
+  }
+}
+
+// Internet Exploer 8>
+//--------------------------------------------------------------------------
+.lt-ie9 {
+  .container {
+    @include container($total-columns);
+  }
+}
+
+// Desktop
+//--------------------------------------------------------------------------
+@include at-breakpoint($large-breakpoint $desktop-columns)
+{
+  .container {
+    @include container($desktop-columns);
+  }
+}
+
+// Tablet
+//--------------------------------------------------------------------------
+@include at-breakpoint($medium-breakpoint $total-columns $large-breakpoint)
+{
+  .container {
+    @include container($total-columns);
+  }
+}
