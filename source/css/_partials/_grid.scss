@@ -53,6 +53,13 @@
   .container {
     @include container($desktop-columns);
   }
+
+  .site-menu {
+    ul {
+      margin-right: -0.75em;
+      margin-left: -0.75em;
+    }
+  }
 }
 
 // Tablet
@@ -61,5 +68,12 @@
 {
   .container {
     @include container($total-columns);
+  }
+
+  .site-menu {
+    ul {
+      margin-right: -0.75em;
+      margin-left: -0.75em;
+    }
   }
 }
